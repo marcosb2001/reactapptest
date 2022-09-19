@@ -3,9 +3,11 @@ export default function Button({ text, type, onTouch}) {
         backgroundColor: type === "alert" ? "red": "crimson",
         color: "white",
         border: 0,
-        padding: "10px"
+        padding: "10px",
+        borderRadius: "15px",
+
     }
     return (
-        <button onClick={onTouch} style={btnStyle} className="btn">{text}</button>
+        <button onClick={onTouch} style={btnStyle} className="btn" >{text}</button>
     )
 }

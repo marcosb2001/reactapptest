@@ -12,7 +12,7 @@ const CartItem = ({id, name, price, quantity, total}) => {
             <h3>{name}</h3>
             <p>cantidad: {quantity}</p>
             <p>{price}</p>
-            <p>precio: {total}</p>
+            <p>precio: $ {total}</p>
         </div>
     )
 }

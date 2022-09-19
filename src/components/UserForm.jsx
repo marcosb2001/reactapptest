@@ -51,14 +51,13 @@ function UserForm ({cart}) {
     }
 
     function handleReset(evt){
-        setUsuarioData({  
+        setUsuarioData({
             name: '',
             email: '',
             telefono: ''
         })
     }
-
-    if(orderFirebase.complete == true) {
+if(orderFirebase.complete == true) {
         return (
             <div>
                 <h1>gracias por su compra !</h1>

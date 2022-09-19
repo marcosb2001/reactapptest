@@ -21,9 +21,9 @@ function ItemDetail({id, name, price, stock, description}) {
         <div style={styles} className="card">
             <div className="card-detail">
                 <h1>{name}</h1>
-                <h3>{price}</h3>
+                <h3>$ {price}</h3>
                 <h5>descripción: {description}</h5>
-                
+                {console.log(stock, price)}
             </div>
 
             { quantityInCart === 0 ?

@@ -7,7 +7,7 @@ function Item({id, name, price, data}) {
         <div className="card">
             <div className="card-detail">
                 <h2>{name}</h2>
-                <h5>{price}</h5>
+                <h5>${price}</h5>
                 <p>{data}</p>
                 <Link to={`/detalle/${id}`}>
                     <Button type text="ver más"></Button>

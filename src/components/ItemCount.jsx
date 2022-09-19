@@ -1,5 +1,5 @@
-import React, {useState}  from "react";
-
+import React from "react";
+import {useState} from "react"
 function ItemCount({initial, stock, onAdd, text}){
     const [items, setItems] = useState(initial);
 
@@ -29,6 +29,7 @@ return (
         <button onClick={ handleDecrement }>-</button>
         <span>{items}</span>
         <button onClick={ handleIncrement }>+</button>
+        <br></br>
         <button onClick={ handleClick}>{text}</button>
 
     </div>

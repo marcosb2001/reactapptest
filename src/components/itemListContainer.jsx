@@ -1,11 +1,10 @@
 import React, { useEffect, useState } from "react"
 import itemsData from "../data/data";
 import ItemList from "./ItemList";
-import firestoreDB from "../services/firebase"
-import { getDocs, collection, snapshotEqual, query, where } from "firebase/firestore";
 import Item from "./Item";
 import { useParams } from "react-router-dom"
-
+import firestoreDB from "../services/firebase";
+import { getDocs, collection, snapshotEqual, query, where } from "firebase/firestore";
 
 export default function ItemListContainer(props) {
 

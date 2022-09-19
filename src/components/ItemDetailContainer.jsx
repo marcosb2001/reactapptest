@@ -1,10 +1,8 @@
 import React, { useEffect, useState } from "react"
 import ItemDetail from "./ItemDetail";
 import { useParams } from "react-router-dom"
-import firestoreDB from "../services/firebase"
-import { collection, doc, getDoc } from "firebase/firestore";
-
-
+import firestoreDB from "../services/firebase";
+import {collection, doc, getDoc} from "firebase/firestore"
 
 export default function ItemDetailContainer(props) {
     const [datos, setDatos] = useState([])
@@ -33,7 +31,7 @@ export default function ItemDetailContainer(props) {
   return (
             <div>
                 <h2>Detalles del producto</h2>
-                <ItemDetail key={datos.id} id={datos.id} name={datos.name} price={datos.price} data={datos.data} category={datos.category} description={datos.description}>
+                <ItemDetail stock={datos.stock} key={datos.id} id={datos.id} name={datos.name} price={datos.price} data={datos.data} category={datos.category} description={datos.description}>
                 </ItemDetail>
             </div>
             )

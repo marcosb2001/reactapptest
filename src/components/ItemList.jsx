@@ -17,7 +17,7 @@ export default function ItemList() {
             {
                 datos.map( (product) => {
                     return (
-                        <Item key={product.id} name={product.name} price={product.price} data={product.data}></Item>
+                        <Item key={product.id} name={product.name} price={product.price} data={product.data} stock={product.stock}></Item>
                     )
                 }
             )}
